@@ -1,0 +1,78 @@
+<!-- Footer Section -->
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <span style="font-size: 2em"><fa-icon [icon]="faLeaf"></fa-icon></span>
+
+      <label>&nbsp;<span></span></label>
+      <span class="pageName">Let's Travel Together</span>
+      <br />
+      <p class="textLogo">
+        The essential travel companion to discover and book trips by
+        <strong>Let's Travel Together</strong>, as well as spot-on stays and
+        experiences - curated and hand-picked by a global community of travel
+        experts and local insiders.
+      </p>
+      <br />
+      <span class="secondSpan"
+        >We support you to make the most of your time on earth.</span
+      >
+    </div>
+    <div class="col">
+      <h3>
+        Office
+        <div class="underline"><span></span></div>
+      </h3>
+      <p>Let's Travel Together</p>
+      <p>Galeria ETC, 12th Floor</p>
+      <p>Tirane, AL 1057</p>
+      <p class="email-id">travelwithus@outlook.com</p>
+      <h4>+355 691234567</h4>
+    </div>
+    <div class="col">
+      <h3>
+        Links
+        <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="join-our-team">About Us</a></li>
+        <li><a href="trips">Find A Guide</a></li>
+        <li><a href="contact-us">Join Us</a></li>
+      </ul>
+    </div>
+    <div class="col newsLetter">
+      <h3>
+        Newsletter
+        <div class="underline"><span></span></div>
+      </h3>
+      <form>
+        <div style="font-size: 2em">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+        </div>
+        <input type="email" placeholder="Enter Your Email" required />
+        <button type="submit" style="font-size: 2em" (click)="sub = !sub">
+          <fa-icon [icon]="faArrowRightFromBracket"></fa-icon>
+        </button>
+        <div class="popup_overlay">
+          <div class="popup" id="popup" *ngIf="sub">
+            <!-- <img src="/done-icon.jpg" alt="Done-Icon" /> -->
+            <h2>Thank you!</h2>
+            <p>You have successfully subscribed to the Newsletter. Thanks!</p>
+            <button type="btn" (click)="sub = !sub">Done</button>
+          </div>
+        </div>
+      </form>
+      <div class="social-icons">
+        <fa-icon [icon]="faFacebook"></fa-icon>
+        <fa-icon [icon]="faTwitter"></fa-icon>
+        <fa-icon [icon]="faWhatsapp"></fa-icon>
+        <fa-icon [icon]="faInstagram"></fa-icon>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <p class="copyright">SDA Protik © 2022 - All Right Reserved</p>
+</footer>
